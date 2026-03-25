@@ -5,15 +5,15 @@
     margin-right: 10px;
     vertical-align: middle;
 }
-/* RESPONSIVIDADE */
+
 @media (max-width: 900px) {
+    /* HEADER */
     header {
         flex-direction: column;
         align-items: flex-start;
-        padding: 12px 10px 12px 10px;
+        padding: 12px 10px;
     }
     .logo-area {
-        margin-right: 0;
         margin-bottom: 10px;
     }
     .menu ul {
@@ -21,13 +21,29 @@
         flex-wrap: wrap;
         padding: 0;
     }
+    /* INSTITUCIONAL (CORREÇÃO PRINCIPAL) */
+    .institucional-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .carousel {
+        max-width: 100%;
+        width: 100%;
+    }
+    .institucional-texto {
+        text-align: center;
+    }
+    .lista-servicos {
+        columns: 1;
+    }
+    /* EXAMES */
     .exames-container {
         flex-direction: column;
-        gap: 16px;
+        gap: 20px;
     }
     .carousel-exames {
-        width: 100% !important;
-        max-width: 100% !important;
+        max-width: 100%;
+        width: 100%;
     }
 }
     
